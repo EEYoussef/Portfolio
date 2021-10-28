@@ -1,0 +1,120 @@
+
+@import "variables";
+header{
+    background-color: $header-color;
+}
+body{
+  margin:0;
+  padding: 0;
+  font-family: $font-header;
+  background-color: $text-color;
+}
+
+/* Navigation bar */
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    height: 90px;
+    .logo{
+        color:$text-color;
+        line-height: 90px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 30px;
+        font-family:$font-logo ;
+        .logo-name{
+        animation: blinker 2s infinite;
+        @keyframes blinker {
+            from { opacity: 1.0; }
+            50% { opacity: 0.5; }
+            to { opacity: 1.0; }
+        }
+    }
+    }
+    .navlinks{
+        list-style: none;
+        float:right;
+        line-height: 90px;
+        margin: 0;
+        padding: 0;
+    
+        li{
+            display:inline-block;
+            margin: 0 20px;
+            a {
+                color: $text-color;
+                text-decoration: none;
+                font-size: 15px;
+                text-transform: uppercase;
+                transition: all 0.3s linear 0s;
+               
+            }
+            a:hover{
+                color: #D2E603;
+                padding-bottom: 6px;
+                border-bottom: 2px solid #D2E603;
+            }
+            .contact{
+                color:$header-color;
+                background-color:$text-color;
+                padding: 9px 20px;
+                border-radius: 50px;
+                transition: all 0.3s linear 0s;
+            }
+            .contact:hover{
+                border-color:$header-color;
+                color: $header-color;
+                
+            }
+         }
+    }
+
+}
+
+.hamburger {
+    display: none;
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: $text-color;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navlinks {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color:white;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navlinks.active {
+        left: 0;
+    }
+
+    .navlinks li {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+}
