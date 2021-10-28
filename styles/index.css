@@ -34,32 +34,49 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-.main-nav .logo .logo-name {
-  -webkit-animation: blinker 2s infinite;
-          animation: blinker 2s infinite;
+.main-nav .logo {
+  letter-spacing: .15em;
+  overflow: hidden;
+  line-height: 40px;
+  border-right: 0.15em solid #FFF5DA;
+  /* The typwriter cursor */
+  -webkit-animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
+          animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
 }
 
-@-webkit-keyframes blinker {
+@-webkit-keyframes typing {
   from {
-    opacity: 1.0;
-  }
-  50% {
-    opacity: 0.5;
+    width: 0;
   }
   to {
-    opacity: 1.0;
+    width: 20%;
   }
 }
 
-@keyframes blinker {
+@keyframes typing {
   from {
-    opacity: 1.0;
-  }
-  50% {
-    opacity: 0.5;
+    width: 0;
   }
   to {
-    opacity: 1.0;
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #FFF5DA;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #FFF5DA;
   }
 }
 
