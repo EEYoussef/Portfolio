@@ -1,12 +1,15 @@
-header {
-  background-color: #7FC8A9;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Ubuntu", sans-serif;
   background-color: #FFF5DA;
+}
+
+header {
+  background-color: #7FC8A9;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
 /* Navigation bar */
@@ -26,40 +29,17 @@ body {
 
 .main-nav .logo {
   color: #FFF5DA;
-  line-height: 90px;
+  line-height: 40px;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   margin-left: 30px;
   font-family: "Roboto Mono", monospace;
-}
-
-.main-nav .logo {
   letter-spacing: .15em;
-  overflow: hidden;
-  line-height: 40px;
   border-right: 0.15em solid #FFF5DA;
   /* The typwriter cursor */
   -webkit-animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
           animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
-}
-
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 20%;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 20%;
-  }
 }
 
 @-webkit-keyframes blink-caret {
@@ -122,12 +102,11 @@ body {
   color: #7FC8A9;
 }
 
-.hamburger {
+.main-nav .hamburger {
   display: none;
 }
 
-.hamburger .bar {
-  display: block;
+.main-nav .hamburger .bar {
   width: 25px;
   height: 3px;
   margin: 5px auto;
@@ -136,33 +115,36 @@ body {
   background-color: #FFF5DA;
 }
 
-@media only screen and (max-width: 768px) {
-  .navlinks {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
+@media screen and (max-width: 680px) {
+  .main-nav {
+    height: 40%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: white;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-  .navlinks.active {
-    left: 0;
+  .main-nav .logo {
+    left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0 30px 0;
+    margin-left: 0;
   }
-  .navlinks li {
-    margin: 2.5rem 0;
-  }
-  .hamburger {
+  .main-nav .hamburger {
     display: block;
-    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .main-nav .navlinks {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+  }
+  .main-nav .navlinks li {
+    display: block;
+    background-color: #7FC8A9;
+    border-top: 1px solid #FFF5DA;
   }
 }
 /*# sourceMappingURL=index.css.map */
