@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
-    <title>Document</title>
+    <title>Contact Me</title>
 </head>
 <body>
     <header>
         <nav class="main-nav">
           <a href="index.html" class="logo"><span>&lt</span>/EMAN<span>&gt</span> </a>
-          <ul class="navlinks">
+          <ul class="navlinks" id = "navlinks">
             <li><a href="../index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./projects.html">Projects</a></li>
           <li><a href="./contact.html" class="contact">Contact</a></li>
          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+         <div class="hamburger" id ="togglebutn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div> 
         </nav>
       </header>
 </body>
+<!-- java script fro the hamburger action -->
+<script>
+  const toggle_Button =  document.getElementById('togglebutn');
+  const navlist = document.getElementById('navlinks');
+
+  toggle_Button.addEventListener('click',()=>{ 
+    navlist.classList.toggle('active');
+  })
+</script>
 </html>

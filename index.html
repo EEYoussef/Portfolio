@@ -14,7 +14,7 @@
   <body>
     <header>
       <nav class="main-nav">
-        <a href="./index.html" class="logo"><span>&lt</span>EMAN<span>&gt</span> </a>
+        <a href="./index.html" class="logo"><span>{</span>Eman<span>}</span> </a>
         <ul class="navlinks" id = "navlinks">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./pages/about.html">About</a></li>
@@ -26,10 +26,11 @@
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
-      </div> 
+        </div> 
       </nav>
     </header>
   </body>
+  <!-- java script fro the hamburger action -->
   <script>
     const toggle_Button =  document.getElementById('togglebutn');
     const navlist = document.getElementById('navlinks');
@@ -37,6 +38,5 @@
     toggle_Button.addEventListener('click',()=>{ 
       navlist.classList.toggle('active');
     })
-
   </script>
   </html>

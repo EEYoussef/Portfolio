@@ -28,36 +28,14 @@ header {
 }
 
 .main-nav .logo {
-  color: #FFF5DA;
+  color: #54436B;
   line-height: 40px;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   margin-left: 30px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Gloria Hallelujah", cursive;
   letter-spacing: .15em;
-  border-right: 0.15em solid #FFF5DA;
-  /* The typwriter cursor */
-  -webkit-animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
-          animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
-}
-
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  25% {
-    border-color: #FFF5DA;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  25% {
-    border-color: #FFF5DA;
-  }
 }
 
 .main-nav .navlinks {

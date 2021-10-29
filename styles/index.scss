@@ -24,7 +24,7 @@ header{
     padding: 1rem 1.5rem;
     height: 90px;
     .logo{  
-        color:$text-color;
+        color:$logo-color;
         line-height: 40px;
         font-size: 30px;
         font-weight: bold;
@@ -32,13 +32,15 @@ header{
         margin-left: 30px;
         font-family:$font-logo ;
         letter-spacing: .15em; 
-        border-right: .15em solid $text-color; /* The typwriter cursor */
-        animation: typing 1.5s steps(10, end),
-        blink-caret .75s step-end infinite;
-        @keyframes blink-caret {
-          from, to { border-color: transparent }
-          25% { border-color: $text-color; }
-        }
+        //----typping annimation-------
+        // border-right: .15em solid $text-color; /* The typwriter cursor */
+        // animation: typing 1.5s steps(10, end),
+        // blink-caret .75s step-end infinite;
+        // @keyframes blink-caret {
+        //   from, to { border-color: transparent }
+        //   25% { border-color: $text-color; }
+        // }
+        // -----typing annimation end----//
       }
     .navlinks{
       list-style: none;
