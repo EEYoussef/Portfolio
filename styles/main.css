@@ -142,11 +142,15 @@ header {
     width: 100%;
     list-style-type: none;
     text-align: center;
+    display: none;
   }
   .main-nav .navlinks li {
     display: block;
     background-color: #7FC8A9;
     border-top: 1px solid #FFF5DA;
+  }
+  .main-nav .active {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */

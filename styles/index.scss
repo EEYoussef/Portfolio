@@ -82,6 +82,7 @@ header{
               margin: 5px auto;
               transition: all 0.3s ease-in-out;
               background-color: $text-color;
+           
           }
      }
     }
@@ -101,6 +102,7 @@ header{
       line-height: 20px;
       margin:10px 0 30px 0;
       margin-left: 0;
+      
     }
     .hamburger{
       display:block;
@@ -112,20 +114,22 @@ header{
       width:100%;
       list-style-type: none;
       text-align: center;
+      display: none;
       
       li{
         display: block;
         background-color: $header-color;
         border-top: 1px solid $text-color;
-       
-
       }
+      
     }
-
+    .active{
+      display: block;
+    }
   }
   
 
-
+  
 
 }
 
