@@ -1,0 +1,82 @@
+.main-nav {
+  width: 100vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+  height: 20vh;
+}
+
+.main-nav .logo {
+  color: #54436B;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: "Gloria Hallelujah", cursive;
+  letter-spacing: .15em;
+}
+
+.main-nav .navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav .navlinks li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main-nav .navlinks li a {
+  color: #FFF5DA;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.main-nav .navlinks li a:hover {
+  color: #D2E603;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #D2E603;
+}
+
+.main-nav .navlinks li .contact {
+  color: #7FC8A9;
+  background-color: #FFF5DA;
+  padding: 9px 20px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.main-nav .navlinks li .contact:hover {
+  border-color: #7FC8A9;
+  color: #7FC8A9;
+}
+
+.main-nav .hamburger {
+  display: none;
+}
+
+.main-nav .hamburger .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #FFF5DA;
+}
+/*# sourceMappingURL=navbar.css.map */

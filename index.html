@@ -14,6 +14,7 @@
   <body>
     <header>
       <nav class="main-nav">
+        <div class= "main-nav-container">
         <a href="./index.html" class="logo"><span>{</span>Eman<span>}</span> </a>
         <ul class="navlinks" id = "navlinks">
           <li><a href="./index.html">Home</a></li>
@@ -27,14 +28,45 @@
           <div class="bar"></div>
           <div class="bar"></div>
         </div> 
+      </div>
       </nav>
     </header>
+<!-- 
+    <iframe src="./pages/nav.html" frameborder="0"></iframe>  -->
+
+
+<!-- ***********landing area for profile pic and biography and social media links *********-->
+    <section class="landing-container">
+      <div class="profile">
+        <img src="./images/profile_toon.png" class= "profile-img" alt="profile-pic">
+        <h2>Eman Youssef</h1>
+        <h3>a <u>pro</u>grammer</h2>
+        <div class="socila-media-container">
+          <a class="socila-media-link" href="https://www.linkedin.com/"><img src="./images/email_icon.png" alt=""></a>
+          <a class="socila-media-link" href="https://www.linkedin.com/"><img src="./images/linkedin_icon.png" alt=""></a>
+          <a class="socila-media-link" href="https://github.com/"><img src="./images/github_icon.png" alt=""></a>
+          <a class="socila-media-link" href="https://www.appbrewery.co/"><img src="./images/cv_icon.png" alt=""></a>
+        </div>
+      </div>
+      <div class="bio">
+        <h1> Biography </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam, fugiat exercitationem excepturi in numquam, asperiores nisi impedit magni laudantium vero quis, dolores sint sunt repudiandae unde iure eos vitae.
+        </p>
+      </div>
+    </section>
+<!-- *********************skills area ************************ -->
+    <section class="skills-container"> Skills</section>
+    <section class="posts-container">Posts</section>
+    <footer class="footer">FOOTER</footer>
   </body>
+
+
+
   <!-- java script fro the hamburger action -->
   <script>
     const toggle_Button =  document.getElementById('togglebutn');
     const navlist = document.getElementById('navlinks');
-
     toggle_Button.addEventListener('click',()=>{ 
       navlist.classList.toggle('active');
     })
