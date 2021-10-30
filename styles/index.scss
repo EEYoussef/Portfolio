@@ -11,6 +11,10 @@ body{
   background-color: $text-color;
   color: $text-color-body;
   // font-size: 1.5rem;
+  // .empty-top-container{
+  //   width:100%;
+  //   height: 20vh;
+  // }
 }
 header{
   
@@ -25,18 +29,18 @@ header{
 //-----Bio and profile pic container------//
 .landing-container{
 
-  position: relative;
+  // position:static;
   padding-top:200px;
   display:flex;
   justify-content: center;
-  height: 80vh;
+  height: auto;
   width: 100%;
   
  
   .profile{
     display: flex;
     // justify-content: center;
-    // align-items: center;
+     align-items: center;
     flex-direction: column;
     .profile-img{
       width:270px;
@@ -76,8 +80,17 @@ header{
   .bio{
     // box-shadow: 5px 5px 15px 5px grey;
     position: relative;
-    margin: 20px 0 10px 0 ;
+    margin: 20px 0 10px 25px ;
     width: 100%;
+    h1{
+      font-size: 2rem;
+      font-family: $font-body;
+    }
+    p{
+      font-size: 1.2rem;
+      font-family: $font-body;
+      font-weight: 300;;
+    }
   }
 
 }
@@ -175,12 +188,37 @@ header{
         
         
 //-----hamburger nav bar---------
+//-------skill section--------
+.skills-container{
+  position: relative;
+  background-color: rgba(127,200,169,0.3);
+  width:100%;
+  height: auto;
+  
+  .rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    
+    div{
+      text-align: center;
+      width:30%;
+      height:30%;
+      padding:20px;
+      img{
+        width:90px;
+        height: 90px;
+      }
+    }
+    
 
+  }
+  
+}
+//--------skill section -----end
  @media  screen and (max-width: 675px) {
    .main-nav{
-  
-  
-  
   
   height: 10vh;
   position:fixed;
