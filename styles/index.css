@@ -198,6 +198,194 @@ body {
   height: 90px;
 }
 
+.posts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.posts-container .post-box-title {
+  margin-left: 20px;
+}
+
+.posts-container .post-list-body {
+  width: 80vw;
+  margin: auto;
+}
+
+.posts-container .post-list-body .post-list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.posts-container .post-list-body .post-list-items .post-info {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+}
+
+.posts-container .post-list-body .post-list-items .post-info h1 {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+}
+
+.posts-container .post-list-body .post-list-items .post-info a {
+  text-decoration: none;
+  color: #54436B;
+}
+
+.posts-container .post-list-body .post-list-items .post-info h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
+.posts-container .post-list-body .post-list-items .post-info p {
+  font-family: "Merriweather", serif;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.posts-container .post-list-body .post-list-items .post-info .divider {
+  margin: 2px;
+}
+
+.posts-container .post-list-body .post-list-items .post-info .folder-icon {
+  padding-right: 4px;
+}
+
+.posts-container .post-list-body .post-list-items .post-pic {
+  width: 150px;
+  height: 150px;
+  padding-bottom: 10px;
+}
+
+.posts-container .post-list-body .post-list-items .post-pic .blog-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 15px 5px grey;
+          box-shadow: 5px 5px 15px 5px grey;
+  margin-bottom: 10px;
+}
+
+.project-container {
+  background-color: rgba(127, 200, 169, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.project-container .project-box-title {
+  margin-left: 20px;
+}
+
+.project-container .project-list-body {
+  width: 80vw;
+  margin: auto;
+}
+
+.project-container .project-list-body .project-list-items {
+  -webkit-box-shadow: 5px 5px 15px 3px gray;
+          box-shadow: 5px 5px 15px 3px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.project-container .project-list-body .project-list-items:hover {
+  -webkit-box-shadow: 5px 5px 15px 9px gray;
+          box-shadow: 5px 5px 15px 9px gray;
+}
+
+.project-container .project-list-body .project-list-items .project-info {
+  width: 100%;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+}
+
+.project-container .project-list-body .project-list-items .project-info h1 {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+}
+
+.project-container .project-list-body .project-list-items .project-info a {
+  text-decoration: none;
+  color: #54436B;
+}
+
+.project-container .project-list-body .project-list-items .project-info h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
+.project-container .project-list-body .project-list-items .project-info p {
+  font-family: "Merriweather", serif;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.project-container .project-list-body .project-list-items .project-info .divider {
+  margin: 2px;
+}
+
+.project-container .project-list-body .project-list-items .project-info .folder-icon {
+  padding-right: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.project-container .project-list-body .project-list-items .project-pic {
+  padding-bottom: 10px;
+}
+
+.project-container .project-list-body .project-list-items .project-pic .project-screenshot {
+  width: 150px;
+  height: 150px;
+  -webkit-box-shadow: 5px 5px 15px 5px grey;
+          box-shadow: 5px 5px 15px 5px grey;
+  margin-bottom: 10px;
+}
+
+.bottom-container {
+  text-align: center;
+}
+
 @media screen and (max-width: 675px) {
   .main-nav {
     height: 10vh;
