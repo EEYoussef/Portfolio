@@ -1,95 +1,127 @@
-/* Navigation bar */
-.main-nav {
-  font-family: "Ubuntu", sans-serif;
-  background-color: #7FC8A9;
-  width: 100%;
-  -webkit-box-shadow: 5px 5px 15px 5px grey;
-          box-shadow: 5px 5px 15px 5px grey;
-  z-index: 10;
-  min-height: 5vh;
-  height: 20vh;
-  position: fixed;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF5DA;
+  color: #54436B;
 }
 
-.main-nav .main-nav-container {
-  width: 90%;
+.intro-container-about {
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
-.main-nav .main-nav-container .logo {
-  color: #54436B;
-  line-height: 40px;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 30px;
-  font-family: "Gloria Hallelujah", cursive;
-  letter-spacing: .15em;
+.intro-container-about .cards-items {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 
-.main-nav .main-nav-container .navlinks {
-  list-style: none;
-  float: right;
-  line-height: 90px;
-  margin: 0;
-  padding: 0;
+.intro-container-about .computer-section, .intro-container-about .cake-section, .intro-container-about .camera-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
 }
 
-.main-nav .main-nav-container .navlinks li {
-  display: inline-block;
-  margin: 0 20px;
+.intro-container-about .computer-section .img-display-itmes, .intro-container-about .cake-section .img-display-itmes, .intro-container-about .camera-section .img-display-itmes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: auto;
 }
 
-.main-nav .main-nav-container .navlinks li a {
-  color: #FFF5DA;
-  text-decoration: none;
-  font-size: 15px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
+.intro-container-about .computer-section .img-display-itmes img, .intro-container-about .cake-section .img-display-itmes img, .intro-container-about .camera-section .img-display-itmes img {
+  width: 32%;
+  margin-bottom: 2%;
+  /* (100-32*3)/2 */
+  position: relative;
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 5px 15px 5px grey;
+          box-shadow: 5px 5px 15px 5px grey;
 }
 
-.main-nav .main-nav-container .navlinks li a:hover {
-  color: #D2E603;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #D2E603;
+.intro-container-about .camera-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.main-nav .main-nav-container .navlinks li .contact {
-  color: #7FC8A9;
-  background-color: #FFF5DA;
-  padding: 9px 20px;
-  border-radius: 50px;
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
+.intro-container-about .camera-imgs .img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
-.main-nav .main-nav-container .navlinks li .contact:hover {
-  border-color: #7FC8A9;
-  color: #7FC8A9;
+.intro-container-about .cake-section {
+  background-color: rgba(127, 200, 169, 0.3);
 }
 
-.main-nav .main-nav-container .hamburger {
-  display: none;
+/* ------------The flip card styling-------------- */
+.flip-card-container {
+  position: relative;
+  width: 40%;
+  height: 250px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15%;
+  text-align: center;
 }
 
-.main-nav .main-nav-container .hamburger .bar {
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #FFF5DA;
-}
-
+/*-------------------flip cake style---------------*/
 @media screen and (max-width: 675px) {
   .main-nav {
     height: 10vh;
@@ -127,6 +159,18 @@
   }
   .main-nav .main-nav-container .active {
     display: block;
+  }
+  .flip-cake-container {
+    width: 80%;
+  }
+  .flip-cake-front img {
+    margin-top: 30%;
+  }
+  .flip-card-front img {
+    margin-top: 30%;
+  }
+  .flip-card-container {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=about.css.map */

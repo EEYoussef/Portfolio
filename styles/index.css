@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +18,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: auto;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+.landing-container .profile-col {
+  max-width: 100%;
 }
 
 .landing-container .profile {
@@ -60,7 +69,7 @@ body {
 
 .landing-container .bio {
   position: relative;
-  margin: 20px 0 10px 25px;
+  margin: 20px 25px 10px 25px;
   width: 100%;
 }
 
@@ -73,6 +82,7 @@ body {
   font-size: 1.2rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
+  word-wrap: break-word;
 }
 
 /* Navigation bar */
@@ -83,8 +93,7 @@ body {
   -webkit-box-shadow: 5px 5px 15px 5px grey;
           box-shadow: 5px 5px 15px 5px grey;
   z-index: 10;
-  min-height: 5vh;
-  height: 20vh;
+  height: 15vh;
   position: fixed;
 }
 
@@ -297,6 +306,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  padding-top: 105px;
 }
 
 .project-container .project-box-title {
@@ -372,11 +382,11 @@ body {
 
 .project-container .project-list-body .project-list-items .project-pic {
   padding-bottom: 10px;
+  width: 20%;
 }
 
 .project-container .project-list-body .project-list-items .project-pic .project-screenshot {
-  width: 150px;
-  height: 150px;
+  width: 100%;
   -webkit-box-shadow: 5px 5px 15px 5px grey;
           box-shadow: 5px 5px 15px 5px grey;
   margin-bottom: 10px;
@@ -384,6 +394,12 @@ body {
 
 .bottom-container {
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-nav {
+    height: 10vh;
+  }
 }
 
 @media screen and (max-width: 675px) {
@@ -445,6 +461,9 @@ body {
   .landing-container h3 {
     font-size: 0.5rem;
     line-height: 1;
+  }
+  .landing-container .bio {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=index.css.map */

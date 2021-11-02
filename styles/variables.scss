@@ -8,4 +8,21 @@ $text-color-body:#54436B;
 $h2-font:'Montserrat', sans-serif;//profile name h2
 $font-body:'Merriweather', serif;
 $container-color:rgba(127,200,169,0.3);
+@mixin containers-with-two-col{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+@mixin hide-labels{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 

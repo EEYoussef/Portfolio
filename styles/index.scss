@@ -4,8 +4,11 @@
 //   position: relative;
 //   top:100vh;
 // }
-
+html {
+  scroll-behavior: smooth;
+}
 body{
+  
   margin:0;
   padding: 0; 
   background-color: $text-color;
@@ -30,13 +33,17 @@ header{
 .landing-container{
 
   // position:static;
-  padding-top:200px;
+  padding-top:200px ;
+
   display:flex;
   justify-content: center;
   height: auto;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+ .profile-col{
   
- 
+  max-width: 100%;
+ }
   .profile{
     display: flex;
     // justify-content: center;
@@ -80,7 +87,7 @@ header{
   .bio{
     // box-shadow: 5px 5px 15px 5px grey;
     position: relative;
-    margin: 20px 0 10px 25px ;
+     margin: 20px 25px 10px 25px ;
     width: 100%;
     h1{
       font-size: 2rem;
@@ -90,6 +97,7 @@ header{
       font-size: 1.2rem;
       font-family: $font-body;
       font-weight: 300;
+      word-wrap: break-word;
     }
   }
 
@@ -104,12 +112,14 @@ header{
   width: 100%;
   box-shadow: 5px 5px 15px 5px grey;
   z-index: 10;
-  min-height: 5vh;
-  height: 20vh;
+  // min-height: 5vh;
+  height: 15vh;
   position:fixed;
+  
 
 .main-nav-container
 {
+ 
   width:90%;
   display: flex; 
   justify-content: space-between;
@@ -143,6 +153,7 @@ header{
       line-height: 90px;
       margin: 0;
       padding: 0;
+     
        li{
         display:inline-block; 
         margin: 0 20px;
@@ -151,7 +162,11 @@ header{
               text-decoration: none;
               font-size: 15px;
               text-transform: uppercase;
-              transition: all 0.3s linear 0s;    
+              transition: all 0.3s linear 0s; 
+              
+              
+              
+              
           }
           a:hover{
               color: #D2E603;
@@ -164,6 +179,7 @@ header{
               padding: 9px 20px;
               border-radius: 50px;
               transition: all 0.3s linear 0s;
+              
           }
           .contact:hover{
               border-color:$header-color;
@@ -294,6 +310,7 @@ header{
 
 ////----------posts section end--------------
 //--------porjects section-------
+
 .project-container{
   background-color: $container-color;
   display: flex;
@@ -302,6 +319,7 @@ header{
   // padding-left: 20px;
   // padding-right: 20px;
   width: 100%;
+  padding-top: 105px;
   .project-box-title{
     margin-left: 20px;
   }
@@ -359,10 +377,12 @@ header{
    .project-pic{
      
       padding-bottom: 10px;
+     width :20%;
      
      .project-screenshot{
-      width:150px;
-       height: 150px;
+       width: 100%;
+      // width:150px;
+      //  height: 150px;
       //  border-radius: 50%;
        box-shadow: 5px 5px 15px 5px grey;
        margin-bottom: 10px;
@@ -383,7 +403,13 @@ header{
 
 
 
-
+@media screen and (max-width: 1024px)
+{
+.main-nav{
+  height:10vh;
+}
+  
+}
 
  @media  screen and (max-width: 675px) {
    .main-nav{
@@ -444,7 +470,9 @@ header{
      font-size: 0.5rem;
       line-height: 1;
     }
-    
+    .bio{
+      margin: auto;
+    }
   
   
   }
