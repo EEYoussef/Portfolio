@@ -119,6 +119,10 @@ body {
   margin: 0;
 }
 
+.landing-container .bio .education-intrests .interests-section ul p {
+  font-size: 1rem;
+}
+
 .landing-container .bio .education-intrests .education-section {
   width: 40%;
 }
@@ -143,6 +147,10 @@ body {
   background-size: 40px;
   margin: 0;
   padding: 0 0 0 45px;
+}
+
+.landing-container .bio .education-intrests .education-section ul li p {
+  font-size: 1rem;
 }
 
 .landing-container .bio .education-intrests .education-section ul li .institution {
@@ -464,6 +472,15 @@ body {
 @media screen and (max-width: 1024px) {
   .main-nav {
     height: 15vh;
+  }
+  .landing-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .education-intrests {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -955,7 +972,7 @@ body {
 }
 
 .blog-post-container .blog-header-img {
-  width: 60%;
+  width: 40%;
   margin: auto;
 }
 
