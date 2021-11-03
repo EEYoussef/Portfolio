@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Contact Me</title>
+</head>
+<body>
+  <header >
+    <nav class="main-nav" >
+      <div class= "main-nav-container" id="page-header">
+      <a href="./index.html" class="logo"><span>{</span>Eman<span>}</span> </a>
+      <ul class="navlinks" id = "navlinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/projects.html">Projects</a></li>
+        <li><a href="../pages/contact.html" class="contact">Contact</a></li>
+      </ul>
+      <!-- hamburger menu bar -->
+      <div class="hamburger" id ="togglebutn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div> 
+    </div>
+    </nav>
+  </header>
+  <article class="blog-post-container" id = "page-container">
+ <div class="blog-post">
+     <div class="blog-header">
+     <img src="../images/blog_pic2.png" alt="blog img"class="blog-header-img">
+      <h1>Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus. </h1>
+      <div class="blog-metadata">
+        <span class="blog-date">
+        Nov 15, 2019 
+        </span>
+        <span class="divider">-</span>
+        <span class="blog-reading-time">
+        5 min read
+        </span>
+        <span class="divider">-</span>
+        <span class="blog-categories">
+        <img class="folder-img" src="../images/folder_icon.png"></img></span>
+        </div>
+    </div>
+    <div class="blog-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Dolore debitis aliquid dolorem quisquam error. Corporis qui et provident doloribus laudantium magni beatae aliquid maiores. Omnis a non quibusdam ab saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis aliquid dolorem quisquam error. Corporis qui et provident doloribus laudantium magni beatae aliquid maiores. Omnis a non quibusdam ab saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis aliquid dolorem quisquam error. Corporis qui et provident doloribus laudantium magni beatae aliquid maiores. Omnis a non quibusdam ab saepe.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis aliquid dolorem quisquam error. Corporis qui et provident doloribus laudantium magni beatae aliquid maiores. Omnis a non quibusdam ab saepe.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis aliquid dolorem quisquam error. Corporis qui et provident doloribus laudantium magni beatae aliquid maiores. Omnis a non quibusdam ab saepe.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis aliquid dolorem quisquam error. Corporis qui et provident doloribus laudantium magni beatae aliquid maiores. Omnis a non quibusdam ab saepe.</p>
+    </div>
+</div>
+</article>
+<footer class="footer">
+    <div class="bottom-container">
+      <div class="socila-media-container">
+        <a class="socila-media-link" href = "mailto: eesamsaied@gmail.com"><img src="../images/email_icon.png" alt=""></a>
+        <a class="socila-media-link" href="https://linkedin.com/in/eman-youssef-a568b536"><img src="../images/linkedin_icon.png" alt=""></a>
+        <a class="socila-media-link" href="https://github.com/EEYoussef/EEYoussef.git"><img src="../images/github_icon.png" alt=""></a>
+        <a class="socila-media-link" href="./Eman Youssef (1).pdf"><img src="../images/cv_icon.png" alt=""></a>
+      </div>
+    <p>© 2021 EMAN YOUSSEF.</p>
+  </div></footer>
+</body>
+<!-- java script fro the hamburger action -->
+<script>
+  const toggle_Button =  document.getElementById('togglebutn');
+  const navlist = document.getElementById('navlinks');
+
+  toggle_Button.addEventListener('click',()=>{ 
+    navlist.classList.toggle('active');
+  })
+  const nav_element = document.getElementById('page-header');
+  const nav_width = document.getElementById('page-header').clientWidth;
+document.getElementById ("page-container").style.paddingTop = document.getElementById('page-header').clientWidth;
+
+  
+</script>
+</html>
