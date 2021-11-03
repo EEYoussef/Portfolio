@@ -75,6 +75,7 @@ header{
       margin: 10px 0 10px ;
       
     }
+    
     .socila-media-container{
       img{
         width:30px;
@@ -99,8 +100,56 @@ header{
       font-weight: 300;
       word-wrap: break-word;
     }
-  }
+    .education-intrests{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .interests-section{
+        width: 40%;
+        h3{
+          font-size: 1.2rem;
+      font-weight: bolder;
+      font-family: $font-body;
+      margin-bottom: 0; 
+        }
+        ul {
+          padding: 0;
+           margin: 0;
+        }
+      }
+      .education-section{
+        width: 40%;
+        h3{
+          font-size: 1.2rem;
+      font-weight: bolder;
+      font-family: $font-body;
+      margin-bottom: 0; 
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+           margin: 0;
+           
+          li {
+            background: url('../images/mortarboard.png') no-repeat left 9px;
+            background-repeat: no-repeat;
+	          background-position: left center;
+	          background-size: 40px;
+            margin: 0;
+	          padding: 0 0 0 45px;
+          .institution{
+            font-size: .75rem;
+            color: rgba(0,0,0,.6);
+          }
+          
+        }
+        
+      }
+    }
 
+  }
+  }
 }
 
 //-----Bio and profile pic container----end--//

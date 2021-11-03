@@ -85,6 +85,66 @@ body {
   word-wrap: break-word;
 }
 
+.landing-container .bio .education-intrests {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-container .bio .education-intrests .interests-section {
+  width: 40%;
+}
+
+.landing-container .bio .education-intrests .interests-section h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
+.landing-container .bio .education-intrests .interests-section ul {
+  padding: 0;
+  margin: 0;
+}
+
+.landing-container .bio .education-intrests .education-section {
+  width: 40%;
+}
+
+.landing-container .bio .education-intrests .education-section h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
+.landing-container .bio .education-intrests .education-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.landing-container .bio .education-intrests .education-section ul li {
+  background: url("../images/mortarboard.png") no-repeat left 9px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  margin: 0;
+  padding: 0 0 0 45px;
+}
+
+.landing-container .bio .education-intrests .education-section ul li .institution {
+  font-size: .75rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /* Navigation bar */
 .main-nav {
   font-family: "Ubuntu", sans-serif;
