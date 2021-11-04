@@ -13,11 +13,23 @@
        width: 100%;
        @include containers-with-two-col;
     justify-content: center;
+
+    flex-direction: column;
+    text-align: center;
+
+    
+    .title-meta-data{
+      width: 100%;
+      text-align: center;
+    h1{
+      width:100%;
+    }
    }
    .blog-header-img{
-       width: 40%;
+       width: 35%;
        margin: auto;
    }
+  }
   
   .blog-metadata{
   overflow: hidden;
@@ -48,4 +60,33 @@
   width:30px;
   height: 30px;
   }
+}
+.navigation-next-prev{
+  width: 95%;
+  text-align: center;
+  padding: 20px;
+
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color:$text-color;
+    color:$header-color;
+  }
+  .previous {
+    background-color:$text-color ;
+    color:$header-color;
+  }
+  .first-page{
+    visibility: hidden;
+  }
+  .next {
+    background-color:$header-color ;
+    color: $text-color ;
+  }
+  
 }

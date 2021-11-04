@@ -6,7 +6,6 @@ body {
 }
 
 .intro-container-about {
-  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

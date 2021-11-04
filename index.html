@@ -12,14 +12,15 @@
 
   </head>
   <body>
-    <div class="empty-top-container"></div>
-    <header>
+    <!-- component header to contain the navigation part -->
+    <header> 
       <nav class="main-nav">
         <div class= "main-nav-container">
         <a href="./index.html" class="logo"><span>{</span>Eman<span>}</span> </a>
         <ul class="navlinks" id = "navlinks">
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/about.html">About Me</a></li>
+          <li><a href="#posts">Posts</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="./pages/contact.html" class="contact">Contact</a></li>
         </ul>
@@ -32,12 +33,12 @@
       </div>
       </nav>
     </header>
-<!-- 
-    <iframe src="./pages/nav.html" frameborder="0"></iframe>  -->
+
+    
 
 
 <!-- ***********landing area for profile pic and biography and social media links *********-->
-    <section class="landing-container">
+    <section class="landing-container home-section">
       <div class="profile profile-col">
         <img src="./images/profile_toon.png" class= "profile-img" alt="profile-pic">
         <h2>Eman Youssef</h1>
@@ -51,7 +52,7 @@
         </div>
       </div>
       <article class="bio profile-col">
-        <h1> About </h1>
+        <h1> Biography </h1>
         <!-- <p>
         Hello, my name is Eman. I am an IT professional aspiring to be a front-end web designer. I find inspiration in everyday things.
         After lecturing on computer science and programming in the Middle East, I took a career break to look after my family. My interest in web development started after working as a free-lance cake-maker.  Cake-making uncovered my passion for creating unique web designs. I developed websites for (……). I am skilled in ( …..)  
@@ -98,7 +99,7 @@
         </div>
     </section>
 <!-- *********************skills area ************************ -->
-    <div class="skills-container"> 
+    <div class="skills-container home-section"> 
       <!-- <h2>Skills</H2> -->
         <div class="rows">
         <div>
@@ -126,7 +127,7 @@
 
 <!-- *********************posts area ************************ -->
 
-    <div class="posts-container">
+    <div class="posts-container home-section" id ="posts">
       <div class="post-box-title">
         <h1>Recent Posts</h1>
       </div>
@@ -153,7 +154,7 @@
         <div class="post-list-items">
         <div class="post-info">
           <h3>
-            <a href="#">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
+            <a href="../pages/blog_post2.html">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
           </h3>
           <p>
             Sit amet consectetur adipiscing elit
@@ -172,7 +173,7 @@
       <div class="post-list-items">
         <div class="post-info">
           <h3>
-            <a href="#">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
+            <a href="../pages/blog_post3.html">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
           </h3>
           <p>
             Sit amet consectetur adipiscing elit
@@ -191,7 +192,7 @@
       <div class="post-list-items">
         <div class="post-info">
           <h3>
-            <a href="#">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
+            <a href="../pages/blog_post4.html">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
           </h3>
           <p>
             Sit amet consectetur adipiscing elit
@@ -210,7 +211,7 @@
       <div class="post-list-items">
         <div class="post-info">
           <h3>
-            <a href="#">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
+            <a href="../pages/blog_post5.html">Proin gravida hendrerit lectus a. Orci phasellus egestas tellus rutrum tellus.</a>
           </h3>
           <p>
             Sit amet consectetur adipiscing elit
@@ -223,14 +224,14 @@
           <img src="./images/folder_icon.png" alt="folder" class="folder-icon">Personal</span>
         </div>
         <div class="post-pic">
-          <img src="./images/blog_pic2.png" alt="blog_pic" class="blog-pic">
+          <img src="./images/blog_pic1.png" alt="blog_pic" class="blog-pic">
         </div>
       </div>
     </div>
   </div>
 <!-- *********************projects area ************************ -->
 <div id="projects"></div>
-  <div class="project-container" >
+  <div class="project-container home-section" >
     <div class="project-box-title">
       <h1 >Projects</h1>
     </div>

@@ -27,10 +27,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
-.blog-post-container .blog-header-img {
-  width: 40%;
+.blog-post-container .blog-header .title-meta-data {
+  width: 100%;
+  text-align: center;
+}
+
+.blog-post-container .blog-header .title-meta-data h1 {
+  width: 100%;
+}
+
+.blog-post-container .blog-header .blog-header-img {
+  width: 35%;
   margin: auto;
 }
 
@@ -60,5 +74,36 @@
 .socila-media-container img {
   width: 30px;
   height: 30px;
+}
+
+.navigation-next-prev {
+  width: 95%;
+  text-align: center;
+  padding: 20px;
+}
+
+.navigation-next-prev a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.navigation-next-prev a:hover {
+  background-color: #FFF5DA;
+  color: #7FC8A9;
+}
+
+.navigation-next-prev .previous {
+  background-color: #FFF5DA;
+  color: #7FC8A9;
+}
+
+.navigation-next-prev .first-page {
+  visibility: hidden;
+}
+
+.navigation-next-prev .next {
+  background-color: #7FC8A9;
+  color: #FFF5DA;
 }
 /*# sourceMappingURL=blog_post1.css.map */
