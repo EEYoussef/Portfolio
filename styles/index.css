@@ -50,7 +50,7 @@ body {
 .landing-container .profile .profile-img {
   width: 270px;
   height: 270px;
-  border-radius: 50%;
+  border-radius: 20%;
   margin: 0 0 20px 0;
 }
 
