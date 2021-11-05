@@ -23,19 +23,21 @@ body{
         align-items: center;
         margin: auto;
     }
-    .computer-section , .cake-section, .camera-section{
+    .computer-section , .cake-section, .camera-section ,.about-myself{
 
         width:100%;
+        
         /////display container////
         display: flex;
         flex-direction: column;
         padding-left: 20px;
         .img-display-itmes{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width:80%;
-        margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width:50%;
+            margin: auto;
+        
         img{
             width: 32%;
             //padding-bottom: 2%; /* Same as width, sets height */
@@ -43,48 +45,62 @@ body{
             position: relative;
             border-radius: 10%;
             box-shadow: 5px 5px 15px 5px grey;
+            transition: transform 0.4s;
+            
         }
+        img:not(.profile-me-img):hover {
+            transform: scale(2) rotate(0.01deg);
+            z-index: 1;
+           
+          }
         
     }
 }
-.camera-imgs {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    align-content: center;
-    .img{
-        flex: 0 0 auto;
-    }
-}
-
-    .cake-section{
-        background-color: $container-color;
-    }
-
-
-}
-
-
-
-/* ------------The flip card styling-------------- */
-.flip-card-container{
-    position: relative;
-    width: 40%;
+.camera-section{
+    background-color: $container-color;
+    .camera-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: center;
     
-    height: 250px;
+        .column-flex{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width:30%;
+            img{
+                width: 100%;
+
+            }
+           
+        }
+        
+    }
     
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15%;
-    text-align: center;
-  
 }
 
 
-/*-------------------flip cake style---------------*/
+}
+
+
+.about-myself{
+    p{
+    font-size: 1.2rem;
+    font-family: $font-body;
+    font-weight: 300;
+    }
+    .profile-me-img{
+        border-radius: 10%;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+        object-position: 50% 50%;
+    }
+
+}
 
 
 

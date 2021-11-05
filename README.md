@@ -56,10 +56,10 @@ This project uses:
 ![alt text](Isolated.png "Title")
 ####Screenshots
 
-![screenshot for the home page](./images/Screen_Shot_6.png "screenshot for the home page")
-![screenshot for the contact me page](./images/Screen_Shot_2.png "screenshot for the contact me page")
-![screenshot for projects list page](./images/Screen_Shot_3.png "screenshot for projects list page")
-![screenshot for posts list  page](./images/Screen_Shot_4.png "screenshot for posts list  page")
+![screenshot for the home page](./docs/Screen_Shot_6.png "screenshot for the home page")
+![screenshot for the contact me page](./docs/Screen_Shot_2.png "screenshot for the contact me page")
+![screenshot for projects list page](./docs/Screen_Shot_3.png "screenshot for projects list page")
+![screenshot for posts list  page](./docs/Screen_Shot_4.png "screenshot for posts list  page")
 
 #### How to run the project
 
@@ -76,7 +76,8 @@ List of features I am working on.
 - [ ] Adding Sidebar.
 - [ ] Enhance the responsiveness of the project.
 - [ ] Add real time blog posts.
-- [ ] Creating Logo image.
+- [ ] Uploading more projects.
+- [x] Creating Gif Logo image.
 
 
 

@@ -43,7 +43,7 @@ body {
   margin: auto;
 }
 
-.intro-container-about .computer-section, .intro-container-about .cake-section, .intro-container-about .camera-section {
+.intro-container-about .computer-section, .intro-container-about .cake-section, .intro-container-about .camera-section, .intro-container-about .about-myself {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +55,7 @@ body {
   padding-left: 20px;
 }
 
-.intro-container-about .computer-section .img-display-itmes, .intro-container-about .cake-section .img-display-itmes, .intro-container-about .camera-section .img-display-itmes {
+.intro-container-about .computer-section .img-display-itmes, .intro-container-about .cake-section .img-display-itmes, .intro-container-about .camera-section .img-display-itmes, .intro-container-about .about-myself .img-display-itmes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,11 +64,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
-.intro-container-about .computer-section .img-display-itmes img, .intro-container-about .cake-section .img-display-itmes img, .intro-container-about .camera-section .img-display-itmes img {
+.intro-container-about .computer-section .img-display-itmes img, .intro-container-about .cake-section .img-display-itmes img, .intro-container-about .camera-section .img-display-itmes img, .intro-container-about .about-myself .img-display-itmes img {
   width: 32%;
   margin-bottom: 2%;
   /* (100-32*3)/2 */
@@ -76,9 +76,23 @@ body {
   border-radius: 10%;
   -webkit-box-shadow: 5px 5px 15px 5px grey;
           box-shadow: 5px 5px 15px 5px grey;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.intro-container-about .camera-imgs {
+.intro-container-about .computer-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .about-myself .img-display-itmes img:not(.profile-me-img):hover {
+  -webkit-transform: scale(2) rotate(0.01deg);
+          transform: scale(2) rotate(0.01deg);
+  z-index: 1;
+}
+
+.intro-container-about .camera-section {
+  background-color: rgba(127, 200, 169, 0.3);
+}
+
+.intro-container-about .camera-section .camera-imgs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,29 +112,38 @@ body {
       align-content: center;
 }
 
-.intro-container-about .camera-imgs .img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+.intro-container-about .camera-section .camera-imgs .column-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
 }
 
-.intro-container-about .cake-section {
-  background-color: rgba(127, 200, 169, 0.3);
+.intro-container-about .camera-section .camera-imgs .column-flex img {
+  width: 100%;
 }
 
-/* ------------The flip card styling-------------- */
-.flip-card-container {
-  position: relative;
-  width: 40%;
-  height: 250px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 15%;
-  text-align: center;
+.about-myself p {
+  font-size: 1.2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
 }
 
-/*-------------------flip cake style---------------*/
+.about-myself .profile-me-img {
+  border-radius: 10%;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
 @media screen and (max-width: 675px) {
   .main-nav {
     height: 10vh;

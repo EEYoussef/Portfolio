@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>About Me</title>
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class= "main-nav-container">
+      <a href="./index.html" class="logo"><span>{</span>Eman<span>}</span> </a>
+      <ul class="navlinks" id = "navlinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./posts_list.html">Posts</a></li>
+        <li><a href="./projects_list.html">Projects</a></li>
+        <li><a href="./contact.html" class="contact">Contact</a></li>
+      </ul>
+      <!-- hamburger menu bar -->
+      <div class="hamburger" id ="togglebutn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div> 
+    </div>
+    </nav>
+  </header>
+  <section class="intro-container-about ">
+    <!-- <div class="cards-items"> -->
+      <div class="about-myself home-section">
+        <h1>
+          A little bit about myself.
+        </h1>
+        <div class="img-display-itmes">
+        <p >
+          My name is Eman Youssef and I'm passionate about seeing my imagination come to life. I'm constantly learning new things everyday and love meeting people who are motivated and unafraid of sharing their ideas with the world.
+
+          I'm a self taught designer and have learnt a lot of the processes, concepts and theories of UX/UI and product design through attending workshops, reading blogs and applying these to projects in my spare time and at work. I am very much a big-picture thinker and enjoy working on products end to end, from ideation all the way to development.
+
+        </p>
+        <img src="../images/me.jpg" alt="about-me-pic" class="profile-me-img">
+        </div>
+      </div>
+      <div class="computer-section home-section">
+          <h1>
+            Graphical design work
+          </h1>
+          <div class="img-display-itmes cakes-imgs">
+    
+            <img src="../images/graphic design/gd4.jpg "alt="cake images" >
+            <img src="../images/graphic design/gd5.PNG "alt="cake images" >
+            <img src="../images/graphic design/gd6.PNG "alt="cake images">
+            <img src="../images/graphic design/gd8.PNG "alt="cake images">
+            <img src="../images/graphic design/martyria_logo7.png" alt="cake images">
+            <img src="../images/graphic design/gd7.jpg " alt="cake images">
+           
+          </div>
+        </div>      
+        <div class="cake-section home-section">
+          <h1>
+            My Cake Decoration Work
+          </h1>
+        <div class="img-display-itmes cakes-imgs">
+          <img src="../images/cake_img11.png" alt="cake images">
+          <img src="../images/cake_img2.png" alt="cake images" >
+          <img src="../images/cake_img3.png" alt="cake images" >
+          <img src="../images/cake_img4.png" alt="cake images">
+          <img src="../images/cake_img13.png" alt="cake images">
+          <img src="../images/cake_img6.png" alt="cake images">
+          <img src="../images/cake_img15.png" alt="cake images">
+          <img src="../images/cake_img8.png" alt="cake images">
+          <img src="../images/cake_img9.png" alt="cake images">
+        </div>
+      </div>
+      <div class ="camera-section home-section">
+        <h1>
+          My Photography Work
+        </h1>
+      <div class="img-display-itmes camera-imgs">
+        <div class="column1 column-flex">
+          <img src="../images/camera/camera1.png" alt="cake images">
+          <img src="../images/camera/camera2.png" alt="cake images">
+        </div>
+        <div class="column2 column-flex">
+        <img src="../images/camera/camera4.png" alt="cake images">
+        <img src="../images/camera/camera13.png" alt="cake images">
+        <img src="../images/camera/camera3.png" alt="cake images">
+        </div>
+        <div class="column3 column-flex">
+        <img src="../images/camera/camera6.png" alt="cake images">
+        <img src="../images/camera/camera15.png" alt="cake images">
+        <img src="../images/camera/camera8.png" alt="cake images">
+        <img src="../images/camera/camera9.png" alt="cake images">
+        </div>
+        <div class="column3 column-flex">
+        
+        </div>
+       </div>
+      </div>
+      <!-- </div> -->
+    
+   
+  
+  </section>
+
+  <footer class="footer">
+    <div class="bottom-container">
+      <div class="socila-media-container">
+        <a class="socila-media-link" href = "mailto: eesamsaied@gmail.com"><img src="../images/email_icon.png" alt=""></a>
+        <a class="socila-media-link" href="https://linkedin.com/in/eman-youssef-a568b536"><img src="../images/linkedin_icon.png" alt=""></a>
+        <a class="socila-media-link" href="https://github.com/EEYoussef/EEYoussef.git"><img src="../images/github_icon.png" alt=""></a>
+        <a class="socila-media-link" href="../Eman Youssef (1).pdf"><img src="../images/cv_icon.png" alt=""></a>
+      </div>
+    <p>© 2021 EMAN YOUSSEF.</p>
+  </div>
+</footer>
+</body>
+
+
+
+
+<!-- java script fro the hamburger action -->
+<script>
+  const toggle_Button =  document.getElementById('togglebutn');
+  const navlist = document.getElementById('navlinks');
+
+  toggle_Button.addEventListener('click',()=>{ 
+    navlist.classList.toggle('active');
+  })
+</script>
+
+</html>
