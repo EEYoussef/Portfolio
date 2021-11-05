@@ -105,62 +105,62 @@ body{
 
 
 
-@media  screen and (max-width: 675px) {
-    .main-nav{
+// @media  screen and (max-width: 675px) {
+//     .main-nav{
      
-     height: 10vh;
-     position:fixed;
-     .main-nav-container{
+//      height: 10vh;
+//      position:fixed;
+//      .main-nav-container{
       
-       flex-direction: column;
-       .logo{
-         left:90px;
-         font-size: 20px;
-         line-height: 20px;
-         margin:10px 0 30px 0;
-         margin-left: 0;
+//        flex-direction: column;
+//        .logo{
+//          left:90px;
+//          font-size: 20px;
+//          line-height: 20px;
+//          margin:10px 0 30px 0;
+//          margin-left: 0;
          
-       }
-       .hamburger{
-         display:block;
-         position: absolute;
-         right:15px;
-         top:15px;
-       }
-       .navlinks{
-         width:100%;
-         list-style-type: none;
-         text-align: center;
-         display: none;
+//        }
+//        .hamburger{
+//          display:block;
+//          position: absolute;
+//          right:15px;
+//          top:15px;
+//        }
+//        .navlinks{
+//          width:100%;
+//          list-style-type: none;
+//          text-align: center;
+//          display: none;
          
-         li{
-           display: block;
-           background-color: $header-color;
-           border-top: 1px solid $text-color;
-         }
+//          li{
+//            display: block;
+//            background-color: $header-color;
+//            border-top: 1px solid $text-color;
+//          }
          
-       }
-       .active{
-         display: block;
-       }
-     }
-   }
+//        }
+//        .active{
+//          display: block;
+//        }
+//      }
+//    }
   
-.flip-cake-container{
-    width: 80%;
+// .flip-cake-container{
+//     width: 80%;
    
    
-}
-.flip-cake-front img{
-    margin-top:30%;
-}
-.flip-card-front img{
-    margin-top:30%;
-}
-.flip-card-container{
-    width: 80%;
+// }
+// .flip-cake-front img{
+//     margin-top:30%;
+// }
+// .flip-card-front img{
+//     margin-top:30%;
+// }
+// .flip-card-container{
+//     width: 80%;
    
-}
-  }  
+// }
+//   }  
 
 

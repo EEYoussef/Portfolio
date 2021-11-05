@@ -49,11 +49,22 @@ This project uses:
     - Js
     -Netlify.app
     -ormspree.io
+    -Balsamiq
 #### Sitemap
-![sitemape image](./images/sitemap.png)
+![sitemape image](./docs/sitemap.png)
 #### Wireframes
-
-![alt text](Isolated.png "Title")
+![wireframe ](./docs/wireframes/HomePage_desktop.png "Home page Page Desktop")
+![wireframe ](./docs/wireframes/HomePage_Phone.png "Home page Page Desktop")
+![wireframe ](./docs/wireframes/HomePage_tablet.png "Home page Page Desktop")
+![wireframe ](./docs/wireframes/AboutPage_desktop.png "About Page Desktop")
+![wireframe ](./docs/wireframes/AboutPage_Phone.png "About Page Desktop")
+![wireframe ](./docs/wireframes/AboutPage_tablet.png "About Page Desktop")
+![wireframe ](./docs/wireframes/PostPage_desktop.png "Post  Page Desktop")
+![wireframe ](./docs/wireframes/PostPage_Phone.png "Post  Page Desktop")
+![wireframe ](./docs/wireframes/PostPage_tablet.png "Post  Page Desktop")
+![wireframe ](./docs/wireframes/contact_desktop.png "contact Page Desktop")
+![wireframe ](./docs/wireframes/contact_phone.png "contact Page Desktop")
+![wireframe ](./docs/wireframes/contact_tablet.png "contact Page Desktop")
 ####Screenshots
 
 ![screenshot for the home page](./docs/Screen_Shot_6.png "screenshot for the home page")
