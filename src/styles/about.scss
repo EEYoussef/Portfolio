@@ -1,7 +1,6 @@
 @import "variables";
 body{
-    margin:0;
-    padding: 0; 
+   
     background-color: $text-color;
     color: $text-color-body;
 
@@ -23,7 +22,7 @@ body{
         align-items: center;
         margin: auto;
     }
-    .computer-section , .cake-section, .camera-section ,.about-myself{
+    .computer-section , .cake-section, .camera-section {
 
         width:100%;
         
@@ -82,15 +81,20 @@ body{
     
 }
 
-
-}
-
-
 .about-myself{
+    width:100%;
+        
+    /////display container////
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
     p{
+        width: 80%;
     font-size: 1.2rem;
     font-family: $font-body;
     font-weight: 300;
+    margin: auto;
+    
     }
     .profile-me-img{
         border-radius: 10%;
@@ -98,69 +102,20 @@ body{
         margin: auto;
         border-radius: 20px;
         object-position: 50% 50%;
+        
     }
-
+    .img-display-items{
+        width:100%;
+        background-color: red;
+    }
 }
 
 
-
-
-// @media  screen and (max-width: 675px) {
-//     .main-nav{
-     
-//      height: 10vh;
-//      position:fixed;
-//      .main-nav-container{
-      
-//        flex-direction: column;
-//        .logo{
-//          left:90px;
-//          font-size: 20px;
-//          line-height: 20px;
-//          margin:10px 0 30px 0;
-//          margin-left: 0;
-         
-//        }
-//        .hamburger{
-//          display:block;
-//          position: absolute;
-//          right:15px;
-//          top:15px;
-//        }
-//        .navlinks{
-//          width:100%;
-//          list-style-type: none;
-//          text-align: center;
-//          display: none;
-         
-//          li{
-//            display: block;
-//            background-color: $header-color;
-//            border-top: 1px solid $text-color;
-//          }
-         
-//        }
-//        .active{
-//          display: block;
-//        }
-//      }
-//    }
-  
-// .flip-cake-container{
-//     width: 80%;
-   
-   
-// }
-// .flip-cake-front img{
-//     margin-top:30%;
-// }
-// .flip-card-front img{
-//     margin-top:30%;
-// }
-// .flip-card-container{
-//     width: 80%;
-   
-// }
-//   }  
+}
+@media screen and (max-width: 1024px){
+    .profile-me-img {
+        width:20%;
+    }
+    }
 
 

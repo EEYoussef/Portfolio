@@ -1,6 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
   background-color: #FFF5DA;
   color: #54436B;
 }
@@ -43,7 +41,7 @@ body {
   margin: auto;
 }
 
-.intro-container-about .computer-section, .intro-container-about .cake-section, .intro-container-about .camera-section, .intro-container-about .about-myself {
+.intro-container-about .computer-section, .intro-container-about .cake-section, .intro-container-about .camera-section {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +53,7 @@ body {
   padding-left: 20px;
 }
 
-.intro-container-about .computer-section .img-display-itmes, .intro-container-about .cake-section .img-display-itmes, .intro-container-about .camera-section .img-display-itmes, .intro-container-about .about-myself .img-display-itmes {
+.intro-container-about .computer-section .img-display-itmes, .intro-container-about .cake-section .img-display-itmes, .intro-container-about .camera-section .img-display-itmes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +66,7 @@ body {
   margin: auto;
 }
 
-.intro-container-about .computer-section .img-display-itmes img, .intro-container-about .cake-section .img-display-itmes img, .intro-container-about .camera-section .img-display-itmes img, .intro-container-about .about-myself .img-display-itmes img {
+.intro-container-about .computer-section .img-display-itmes img, .intro-container-about .cake-section .img-display-itmes img, .intro-container-about .camera-section .img-display-itmes img {
   width: 32%;
   margin-bottom: 2%;
   /* (100-32*3)/2 */
@@ -82,7 +80,7 @@ body {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.intro-container-about .computer-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .about-myself .img-display-itmes img:not(.profile-me-img):hover {
+.intro-container-about .computer-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes img:not(.profile-me-img):hover {
   -webkit-transform: scale(2) rotate(0.01deg);
           transform: scale(2) rotate(0.01deg);
   z-index: 1;
@@ -129,18 +127,43 @@ body {
   width: 100%;
 }
 
-.about-myself p {
+.intro-container-about .about-myself {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+.intro-container-about .about-myself p {
+  width: 80%;
   font-size: 1.2rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
+  margin: auto;
 }
 
-.about-myself .profile-me-img {
+.intro-container-about .about-myself .profile-me-img {
   border-radius: 10%;
   display: block;
   margin: auto;
   border-radius: 20px;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+}
+
+.intro-container-about .about-myself .img-display-items {
+  width: 100%;
+  background-color: red;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-me-img {
+    width: 20%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
