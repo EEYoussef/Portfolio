@@ -482,6 +482,7 @@ header {
 
 .bottom-container {
   text-align: center;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -547,7 +548,7 @@ header {
     position: absolute;
     left: 80%;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5vh;
   }
   .main-nav .main-nav-container .navlinks {
     width: 100%;

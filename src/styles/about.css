@@ -145,6 +145,7 @@ body {
   font-family: "Merriweather", serif;
   font-weight: 300;
   margin: auto;
+  padding-bottom: 8vh;
 }
 
 .intro-container-about .about-myself .profile-me-img {
