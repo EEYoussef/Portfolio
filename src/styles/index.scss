@@ -694,29 +694,48 @@ h3{
 
 @media screen and (max-width: 768px){
 .home-section:first-of-type {
-    padding-top: 40px;
+    padding-top: 60px;
 }
-
-}
-@media screen and (max-width: 768px){
 .home-section {
-    padding: 60px 0 60px 0;
+  padding: 60px 0 60px 0;
 }
 }
 
 
 
-  .home-section:first-of-type {
-      padding-top: 40px;
-  }
+
+
+  
   
   @media screen and (max-width: 1024px){
+    .home-section:first-of-type {
+      padding-top: 60px;
+  }
   .home-section {
       padding: 60px 0 60px 0;
   }
   }
 
   @media screen and (max-width: 1024px)
+  {
+    .home-section{
+    .skills-container {
+      .rows{
+        width: 90%;
+        margin: auto;
+        align-items: baseline;
+        div{
+          img{
+            width: 60%;
+           
+            }
+          }
+        }
+
+       }
+      }
+  } 
+  @media screen and (max-width: 768px)
   {
     .home-section{
     .skills-container {

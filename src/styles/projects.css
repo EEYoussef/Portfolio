@@ -36,6 +36,7 @@ body {
 .project-snake .article-header .header-img {
   text-align: center;
   margin: auto;
+  padding-top: 20px;
 }
 
 .project-snake .article-header .header-img img {
