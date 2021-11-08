@@ -470,7 +470,7 @@ header {
 .project-container .project-list-body .project-list-items .project-info .folder-icon {
   padding-right: 4px;
   width: 20px;
-  height: 20px;
+  height: auto;
 }
 
 .project-container .project-list-body .project-list-items .project-pic {
@@ -720,32 +720,28 @@ body {
           justify-content: center;
   height: auto;
   gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-snake .article-header .header-img {
+  text-align: center;
+  margin: auto;
 }
 
 .project-snake .article-header .header-img img {
-  width: 100%;
+  width: 50%;
 }
 
-.project-snake .article-header h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 20px 0 10px;
-  line-height: 1.5vh;
-  white-space: nowrap;
+.project-snake .article-header .header-title {
   text-align: center;
 }
 
-.project-snake .article-header h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 10px 0 10px;
-}
-
 .project-snake .article-header .github-folder-icon {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: auto;
   text-decoration: none;
   padding: 2px 10px 2px 10px;
   border-top: 1px solid #54436B;

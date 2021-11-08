@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://eman-youssef.netlify.app/">
-    <img src="./images/profile_toon.png" alt="Project Name" width=150 height=150>
+    <img src="./docs/profile_pic.gif" alt="Project Name" width=150 height=150>
   </a>
   <h3 align="center">Portfolio Website</h3>
 
@@ -17,6 +17,8 @@
 
 ## Table of contents
 - [About the Website](#about-the-website)
+- [Target Audience](#target-audience)
+- [Host](#host)
 - [Technical](#technical)
 - [To Do List](#to-do-list)
 - [Contact Information](#contact-information)
@@ -30,8 +32,7 @@ The website reflects my ability to  design, deveop and deploy a website using HT
 The website consists of 
 
 #### Target Audience:
-
-
+The target audience are potential employer or recruiter. 
 #### Host:
 The project is hosted in netlify 
 ##### https://eman-youssef.netlify.app/
@@ -62,15 +63,107 @@ This project uses:
 ![wireframe ](./docs/wireframes/PostPage_desktop.png "Post  Page Desktop")
 ![wireframe ](./docs/wireframes/PostPage_Phone.png "Post  Page Desktop")
 ![wireframe ](./docs/wireframes/PostPage_tablet.png "Post  Page Desktop")
+
+![wireframe ](./docs/wireframes/Project_list_desktop.png "Project  Page Desktop")
+![wireframe ](./docs/wireframes/Project_list_Phone.png "Project  Page Desktop")
+![wireframe ](./docs/wireframes/Project_list_tab.png "Project  Page Desktop")
+
+![wireframe ](./docs/wireframes/Project_detail.png "Project  detail page")
 ![wireframe ](./docs/wireframes/contact_desktop.png "contact Page Desktop")
 ![wireframe ](./docs/wireframes/contact_phone.png "contact Page Desktop")
 ![wireframe ](./docs/wireframes/contact_tablet.png "contact Page Desktop")
-####Screenshots
+<hr>
 
-![screenshot for the home page](./docs/Screen_Shot_6.png "screenshot for the home page")
-![screenshot for the contact me page](./docs/Screen_Shot_2.png "screenshot for the contact me page")
-![screenshot for projects list page](./docs/Screen_Shot_3.png "screenshot for projects list page")
-![screenshot for posts list  page](./docs/Screen_Shot_4.png "screenshot for posts list  page")
+###Screenshots
+
+####Desktop size
+#####Home Page:
+![screenshot for the home page](./docs/screenshot/home_desktop1.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_desktop2.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_desktop3.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_desktop4.png "screenshot for the home page")
+
+#####About Me Page:
+![screenshot for the about page](./docs/screenshot/about_desktop1.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_desktop2.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_desktop3.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_desktop4.png "screenshot for the about page")
+
+#####Posts Page:
+![screenshot for the post page](./docs/screenshot/posts_desktop1.png "screenshot for the post page")
+![screenshot for the post page](./docs/screenshot/posts_detail_desktop.png "screenshot for the posts page")
+
+#####Project Page:
+![screenshot for the project page](./docs/screenshot/project_desktop.png "screenshot for the project page")
+![screenshot for the project page](./docs/screenshot/project_detail_desktop.png "screenshot for the project page")
+
+#####Contact Page:
+![screenshot for the about page](./docs/screenshot/contact_desktop.png "screenshot for the contact page")
+
+
+####Phone size
+#####Home Page:
+![screenshot for the home page](./docs/screenshot/home_phone1.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_phone2.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_phone3.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_phone4.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_phone5.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/menu_phone.png "screenshot for the home page")
+
+
+#####About Me Page:
+![screenshot for the about page](./docs/screenshot/about_phone1.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_phone2.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_phone3.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_phone4.png "screenshot for the about page")
+
+#####Posts Page:
+![screenshot for the post page](./docs/screenshot/post_phone1.png "screenshot for the post page")
+![screenshot for the post page](./docs/screenshot/post_phone2.png "screenshot for the post page")
+![screenshot for the post page](./docs/screenshot/post_phone3.png "screenshot for the post page")
+![screenshot for the post page](./docs/screenshot/posts_detail_phone.png "screenshot for the posts page")
+
+#####Project Page:
+![screenshot for the project page](./docs/screenshot/project_phone1.png "screenshot for the project page")
+![screenshot for the project page](./docs/screenshot/project_detail_phone.png "screenshot for the project page")
+
+
+#####Contact Page:
+![screenshot for the contact page](./docs/screenshot/contact_phone.png "screenshot for the contact page")
+
+![screenshot for the contact page](./docs/screenshot/contact_success.png "screenshot for the contact page")
+![screenshot for the contact page](./docs/screenshot/recaptch_contact.png "screenshot for the contact page")
+
+
+
+####Tablet size
+#####Home Page
+![screenshot for the home page](./docs/screenshot/home_tab1.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_tab2.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_tab3.png "screenshot for the home page")
+![screenshot for the home page](./docs/screenshot/home_tab4.png "screenshot for the home page")
+
+#####About Me Page:
+![screenshot for the about page](./docs/screenshot/about_tab1.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_tab2.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_tab3.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_tab4.png "screenshot for the about page")
+![screenshot for the about page](./docs/screenshot/about_tab5.png "screenshot for the about page")
+
+
+#####Posts Page:
+![screenshot for the post page](./docs/screenshot/post_tab1.png "screenshot for the post page")
+![screenshot for the post page](./docs/screenshot/post_tab2.png "screenshot for the post page")
+
+![screenshot for the post page](./docs/screenshot/post_detail_tab1.png "screenshot for the posts page")
+#####Project Page:
+![screenshot for the project page](./docs/screenshot/project_list_tab.png "screenshot for the project page")
+![screenshot for the project page](./docs/screenshot/project_detail_tab.png "screenshot for the project page")
+
+
+#####Contact Page:
+![screenshot for the contact page](./docs/screenshot/contact_tab1.png "screenshot for the contact page")
+<hr>
 
 #### How to run the project
 
