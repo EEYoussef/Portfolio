@@ -23,6 +23,28 @@ body{
   //   height: 20vh;
   // }
 }
+h1 {
+  font-size: 2rem;
+  font-family: $font-body;
+}
+h2 {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  font-family: $font-body;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: $font-body;
+  margin-bottom: 0;
+}
+p{
+  font-size: 1rem;
+
+  font-family: $font-body;
+  margin-bottom: 0;
+}
 header{
   width:100%;
   padding:0;
@@ -30,7 +52,7 @@ header{
 }
 .home-section{
   display:block;
-  padding: 110px 0;
+  padding: 60px 0 110px 0;
   animation: intro .3s both;
   animation-delay: .15s;
   
@@ -178,7 +200,8 @@ header{
   box-shadow: 5px 5px 15px 5px grey;
   z-index: 10;
   // min-height: 5vh;
-  height: 15vh;
+  //height: 15vh;
+  height:70px;
   position:fixed;
   
 
@@ -200,6 +223,8 @@ header{
         font-weight: bold;
         text-decoration: none;
         margin-left: 30px;
+        margin-top:5px;
+        margin-bottom: 5px;
         font-family:$font-logo ;
         letter-spacing: .15em; 
         //----typping annimation-------
@@ -215,7 +240,7 @@ header{
     .navlinks{
       list-style: none;
       float:right;
-      line-height: 90px;
+      //line-height: 90px;
       margin: 0;
       padding: 0;
       white-space:nowrap;
@@ -283,6 +308,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 30px;
+    align-items: baseline;
     
     div{
       text-align: center;
@@ -290,8 +316,8 @@ header{
       height:30%;
       padding:20px;
       img{
-        width:90px;
-        height: 90px;
+        width:30%;
+        margin: auto;
       }
     }
     
@@ -474,7 +500,8 @@ header{
 @media screen and (max-width: 1024px)
 {
 .main-nav{
-  height:13vh;
+ // height:13vh;
+ height:50px;
 }
 .landing-container{
    flex-wrap: wrap;
@@ -509,7 +536,7 @@ header{
 @media  screen and (max-width: 420px) {
   .main-nav{
  
- height: 15vh;
+ height: 50px;
  position:fixed;
  .main-nav-container{
   
@@ -519,7 +546,7 @@ header{
      font-size: 20px;
      line-height: 20px;
      //margin:10px 0 30px 0;
-     margin-top:40%;
+     margin:5px auto 5px auto;
      margin-left:auto;
      margin-right:auto;
      margin-bottom: 0;
@@ -530,7 +557,7 @@ header{
      position: absolute;
      left:80%;
      margin: auto;
-     margin-top:5vh;
+     margin:5px auto 5px auto;
     //  right:15px;
     //  top:15px;
    }
@@ -544,6 +571,8 @@ header{
        display: block;
        background-color: $header-color;
        border-top: 1px solid $text-color;
+       padding-top:20px;
+       padding-bottom: 20px;;
      }
      
    }
@@ -589,7 +618,7 @@ h3{
  @media  screen and (max-width: 675px) {
    .main-nav{
   
-  height: 13vh;
+  height: 50px;
   position:fixed;
   .main-nav-container{
     margin: auto;
@@ -602,7 +631,7 @@ h3{
      font-size: 20px;
      line-height: 20px;
      //margin:10px 0 30px 0;
-     margin-top:5vh;
+     margin:5px auto 5px auto;
      margin-left:auto;
      margin-right:auto;
      margin-bottom: 0;
@@ -665,29 +694,44 @@ h3{
 
 @media screen and (max-width: 768px){
 .home-section:first-of-type {
-    padding-top: 15vh;
+    padding-top: 40px;
 }
-// .home-section:first-of-type {
-//     padding-top: 20vh;
-// }
+
 }
 @media screen and (max-width: 768px){
 .home-section {
-    padding: 10vh 0 5vh 0;
+    padding: 60px 0 60px 0;
 }
 }
 
-@media screen and (max-width: 1024px){
-  // .home-section:first-of-type {
-  //     padding-top: 20vh;
-  // }
+
 
   .home-section:first-of-type {
-      padding-top: 15vh;
+      padding-top: 40px;
   }
-  }
+  
   @media screen and (max-width: 1024px){
   .home-section {
-      padding: 10vh 0 10vh 0;
+      padding: 60px 0 60px 0;
   }
   }
+
+  @media screen and (max-width: 1024px)
+  {
+    .home-section{
+    .skills-container {
+      .rows{
+        width: 90%;
+        margin: auto;
+        align-items: baseline;
+        div{
+          img{
+            width: 90%;
+           
+            }
+          }
+        }
+
+       }
+      }
+  } 

@@ -108,7 +108,7 @@ body{
     }
     .img-display-items{
         width:100%;
-        background-color: red;
+       // background-color: red;
     }
 }
 
@@ -118,6 +118,15 @@ body{
     .profile-me-img {
         width:20%;
     }
+    
+    
+    
+    img:not(.profile-me-img):hover {
+        transform: scale(4) rotate(0.01deg);
+        z-index: 1;
+       
+      }
+
     }
 
 

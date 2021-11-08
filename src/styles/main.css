@@ -20,6 +20,31 @@ body {
   color: #54436B;
 }
 
+h1 {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0;
+}
+
 header {
   width: 100%;
   padding: 0;
@@ -28,7 +53,7 @@ header {
 
 .home-section {
   display: block;
-  padding: 110px 0;
+  padding: 60px 0 110px 0;
   -webkit-animation: intro .3s both;
           animation: intro .3s both;
   -webkit-animation-delay: .15s;
@@ -185,7 +210,7 @@ header {
   -webkit-box-shadow: 5px 5px 15px 5px grey;
           box-shadow: 5px 5px 15px 5px grey;
   z-index: 10;
-  height: 15vh;
+  height: 70px;
   position: fixed;
 }
 
@@ -210,6 +235,8 @@ header {
   font-weight: bold;
   text-decoration: none;
   margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-family: "Gloria Hallelujah", cursive;
   letter-spacing: .15em;
 }
@@ -217,7 +244,6 @@ header {
 .main-nav .main-nav-container .navlinks {
   list-style: none;
   float: right;
-  line-height: 90px;
   margin: 0;
   padding: 0;
   white-space: nowrap;
@@ -287,6 +313,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 30px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .skills-container .rows div {
@@ -297,8 +326,8 @@ header {
 }
 
 .skills-container .rows div img {
-  width: 90px;
-  height: 90px;
+  width: 30%;
+  margin: auto;
 }
 
 .posts-container {
@@ -492,7 +521,7 @@ header {
 
 @media screen and (max-width: 1024px) {
   .main-nav {
-    height: 13vh;
+    height: 50px;
   }
   .landing-container {
     -ms-flex-wrap: wrap;
@@ -530,7 +559,7 @@ header {
 
 @media screen and (max-width: 420px) {
   .main-nav {
-    height: 15vh;
+    height: 50px;
     position: fixed;
   }
   .main-nav .main-nav-container {
@@ -543,7 +572,7 @@ header {
     left: 50%;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 40%;
+    margin: 5px auto 5px auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -553,7 +582,7 @@ header {
     position: absolute;
     left: 80%;
     margin: auto;
-    margin-top: 5vh;
+    margin: 5px auto 5px auto;
   }
   .main-nav .main-nav-container .navlinks {
     width: 100%;
@@ -565,6 +594,8 @@ header {
     display: block;
     background-color: #7FC8A9;
     border-top: 1px solid #FFF5DA;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .main-nav .main-nav-container .active {
     display: block;
@@ -603,7 +634,7 @@ header {
 
 @media screen and (max-width: 675px) {
   .main-nav {
-    height: 13vh;
+    height: 50px;
     position: fixed;
   }
   .main-nav .main-nav-container {
@@ -617,7 +648,7 @@ header {
     left: 50%;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 5vh;
+    margin: 5px auto 5px auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -669,25 +700,36 @@ header {
 
 @media screen and (max-width: 768px) {
   .home-section:first-of-type {
-    padding-top: 15vh;
+    padding-top: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .home-section {
-    padding: 10vh 0 5vh 0;
+    padding: 60px 0 60px 0;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .home-section:first-of-type {
-    padding-top: 15vh;
-  }
+.home-section:first-of-type {
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 1024px) {
   .home-section {
-    padding: 10vh 0 10vh 0;
+    padding: 60px 0 60px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-section .skills-container .rows {
+    width: 90%;
+    margin: auto;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .home-section .skills-container .rows div img {
+    width: 90%;
   }
 }
 
@@ -1023,12 +1065,16 @@ body {
 
 .intro-container-about .about-myself .img-display-items {
   width: 100%;
-  background-color: red;
 }
 
 @media screen and (max-width: 1024px) {
   .profile-me-img {
     width: 20%;
+  }
+  img:not(.profile-me-img):hover {
+    -webkit-transform: scale(4) rotate(0.01deg);
+            transform: scale(4) rotate(0.01deg);
+    z-index: 1;
   }
 }
 
