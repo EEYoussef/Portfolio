@@ -663,6 +663,8 @@ header {
     display: block;
     background-color: #7FC8A9;
     border-top: 1px solid #FFF5DA;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .main-nav .main-nav-container .active {
     display: block;
