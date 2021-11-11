@@ -80,7 +80,7 @@ body {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.intro-container-about .computer-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes img:not(.profile-me-img):hover {
+.intro-container-about .computer-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover {
   -webkit-transform: scale(2) rotate(0.01deg);
           transform: scale(2) rotate(0.01deg);
   z-index: 1;
@@ -146,6 +146,7 @@ body {
   font-weight: 300;
   margin: auto;
   padding-bottom: 8vh;
+  line-height: 1.5;
 }
 
 .intro-container-about .about-myself .profile-me-img {
@@ -155,6 +156,7 @@ body {
   border-radius: 20px;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+  padding-bottom: 8vh;
 }
 
 .intro-container-about .about-myself .img-display-items {
@@ -165,7 +167,7 @@ body {
   .profile-me-img {
     width: 20%;
   }
-  img:not(.profile-me-img):hover {
+  .img-display-itmes img:not(.profile-me-img):hover {
     -webkit-transform: scale(4) rotate(0.01deg);
             transform: scale(4) rotate(0.01deg);
     z-index: 1;

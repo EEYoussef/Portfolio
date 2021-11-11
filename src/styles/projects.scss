@@ -4,13 +4,7 @@
       
       background-color: $text-color;
       color: $text-color-body;
-      // font-size: 1.5rem;
-      // .empty-top-container{
-      //   width:100%;
-      //   height: 20vh;
-      // }
-      
-    // 
+     
   }
     .project-snake{ 
       display: flex;
@@ -39,22 +33,7 @@
       .header-title{
         text-align: center;
       }
-      //   h2{
-      //     font-family: $h2-font;
-      //     font-size: min(2rem,4rem);
-      //     font-weight: 400;
-      //     margin: 20px 0 10px;
-      //     line-height: 1.5vh;
-      //     white-space: nowrap;
-      //     text-align: center;
-      //   }
-      //   h3{
-      //     font-family: $h2-font;
-      //     font-size: min(1rem,3rem);
-      //     font-weight: 300;
-      //     margin: 10px 0 10px ;
-          
-      // }
+     
       .github-folder-icon{
         width:50px;
         height: auto;
@@ -67,18 +46,19 @@
         border-radius: 25%;
          
       }
-.article-content{
 
-}
       }
-      .article-content{
-        p{
-          padding: 20px;
-          font-size: 1.2rem;
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    
-        }
+      
+    }
+    .article-content{
+      p{
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top:20px;
+        font-size: 1.2rem;
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        
       }
     }
     @media  screen and (max-width: 675px) {
@@ -87,8 +67,17 @@
        flex-direction: column;
       align-items: center;
      }
-     .header-img{
-       
-     }
+     
+     .article-content{
+      p{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top:20px;
+        font-size: 1.2rem;
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        
+      }
     }  
-   
+  
+  }

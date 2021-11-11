@@ -44,6 +44,7 @@ p{
 
   font-family: $font-body;
   margin-bottom: 0;
+  line-height: 1.5;
 }
 header{
   width:100%;
@@ -330,7 +331,7 @@ header{
 .posts-container{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   // padding-left: 20px;
   // padding-right: 20px;
   width: 100%;
@@ -338,7 +339,7 @@ header{
     margin-left: 20px;
   }
  .post-list-body{
-   width :80vw;
+   width :50vw;
    margin: auto;
   .post-list-items
   {
@@ -378,16 +379,20 @@ header{
    }
    }
    .post-pic{
-     width:150px;
-       height: 150px;
+    //  width:150px;
+    //    height: 150px;
       padding-bottom: 10px;
+      max-width :80px;
+       max-height: 80px;
+       margin:0 0 20px 20px;
      
      .blog-pic{
        width: 100%;
        height: 100%;
-       border-radius: 50%;
+       border-radius: 10%;
        box-shadow: 5px 5px 15px 5px grey;
        margin-bottom: 10px;
+       
      }
      }
   }
@@ -403,12 +408,15 @@ header{
 
 ////----------posts section end--------------
 //--------porjects section-------
-
-.project-container{
+#projects{
   background-color: $container-color;
+  background-clip: padding-box;
+}
+.project-container{
+  //background-color: $container-color;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   // padding-left: 20px;
   // padding-right: 20px;
   width: 100%;
@@ -417,7 +425,7 @@ header{
     margin-left: 20px;
   }
  .project-list-body{
-   width :80vw;
+   width :50vw;
    margin: auto;
   
   .project-list-items
@@ -448,7 +456,7 @@ header{
       color: $text-color-body;
     }
     h3{
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bolder;
       font-family: $font-body;
       margin-bottom: 0; 
@@ -524,7 +532,7 @@ header{
   .posts-container{ 
     .post-list-body{ 
       .post-list-items{
-          flex-direction:column-reverse;
+          flex-direction:row;
           align-items: center;
         .article-categories{
           display:none;
@@ -614,6 +622,7 @@ h3{
  
  
  }
+ 
 }
  @media  screen and (max-width: 675px) {
    .main-nav{
@@ -688,6 +697,20 @@ h3{
   
   
   }
+  .posts-container{
+    
+  .post-list-body{
+    
+    width:80vw;
+  }
+}
+.project-container{
+  flex-direction: column;
+  .project-list-body{
+    width:80vw;
+  }
+}
+  
 }
 
 

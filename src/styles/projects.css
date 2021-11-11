@@ -59,8 +59,10 @@ body {
   border-radius: 25%;
 }
 
-.project-snake .article-content p {
-  padding: 20px;
+.article-content p {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
   font-size: 1.2rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -75,6 +77,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .article-content p {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
   }
 }
 /*# sourceMappingURL=projects.css.map */

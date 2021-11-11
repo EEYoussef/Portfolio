@@ -32,7 +32,7 @@ The website reflects my ability to  design, deveop and deploy a website using HT
 The website consists of 
 
 #### Target Audience:
-The target audience are potential employer or recruiter. 
+The target audience are potential employer,hiring manager or a recruiter who will use the webpage to evalute me as a job candidate.
 #### Host:
 The project is hosted in netlify 
 ##### https://eman-youssef.netlify.app/

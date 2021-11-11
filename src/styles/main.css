@@ -43,6 +43,7 @@ p {
   font-size: 1rem;
   font-family: "Merriweather", serif;
   margin-bottom: 0;
+  line-height: 1.5;
 }
 
 header {
@@ -336,10 +337,10 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
 }
 
@@ -348,7 +349,7 @@ header {
 }
 
 .posts-container .post-list-body {
-  width: 80vw;
+  width: 50vw;
   margin: auto;
 }
 
@@ -403,31 +404,36 @@ header {
 }
 
 .posts-container .post-list-body .post-list-items .post-pic {
-  width: 150px;
-  height: 150px;
   padding-bottom: 10px;
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 0 20px 20px;
 }
 
 .posts-container .post-list-body .post-list-items .post-pic .blog-pic {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 10%;
   -webkit-box-shadow: 5px 5px 15px 5px grey;
           box-shadow: 5px 5px 15px 5px grey;
   margin-bottom: 10px;
 }
 
-.project-container {
+#projects {
   background-color: rgba(127, 200, 169, 0.3);
+  background-clip: padding-box;
+}
+
+.project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
 }
 
@@ -436,7 +442,7 @@ header {
 }
 
 .project-container .project-list-body {
-  width: 80vw;
+  width: 50vw;
   margin: auto;
 }
 
@@ -480,7 +486,7 @@ header {
 }
 
 .project-container .project-list-body .project-list-items .project-info h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bolder;
   font-family: "Merriweather", serif;
   margin-bottom: 0;
@@ -544,10 +550,10 @@ header {
     width: 100%;
   }
   .posts-container .post-list-body .post-list-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -698,6 +704,18 @@ header {
   .landing-container .bio {
     margin: auto;
   }
+  .posts-container .post-list-body {
+    width: 80vw;
+  }
+  .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-container .project-list-body {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -805,8 +823,10 @@ body {
   border-radius: 25%;
 }
 
-.project-snake .article-content p {
-  padding: 20px;
+.article-content p {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
   font-size: 1.2rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -821,6 +841,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .article-content p {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
   }
 }
 
@@ -998,7 +1026,7 @@ body {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.intro-container-about .computer-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes img:not(.profile-me-img):hover {
+.intro-container-about .computer-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover {
   -webkit-transform: scale(2) rotate(0.01deg);
           transform: scale(2) rotate(0.01deg);
   z-index: 1;
@@ -1064,6 +1092,7 @@ body {
   font-weight: 300;
   margin: auto;
   padding-bottom: 8vh;
+  line-height: 1.5;
 }
 
 .intro-container-about .about-myself .profile-me-img {
@@ -1073,6 +1102,7 @@ body {
   border-radius: 20px;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+  padding-bottom: 8vh;
 }
 
 .intro-container-about .about-myself .img-display-items {
@@ -1083,7 +1113,7 @@ body {
   .profile-me-img {
     width: 20%;
   }
-  img:not(.profile-me-img):hover {
+  .img-display-itmes img:not(.profile-me-img):hover {
     -webkit-transform: scale(4) rotate(0.01deg);
             transform: scale(4) rotate(0.01deg);
     z-index: 1;
@@ -1157,10 +1187,6 @@ body {
 
 .blog-post-container .folder-icon {
   padding-right: 4px;
-}
-
-.blog-post-container .blog-body p {
-  font-size: 1.5rem;
 }
 
 .socila-media-container img {

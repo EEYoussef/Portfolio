@@ -47,12 +47,13 @@ body{
             transition: transform 0.4s;
             
         }
+        .img-display-itmes{
         img:not(.profile-me-img):hover {
             transform: scale(2) rotate(0.01deg);
             z-index: 1;
            
           }
-        
+        }
     }
 }
 .camera-section{
@@ -95,6 +96,7 @@ body{
     font-weight: 300;
     margin: auto;
     padding-bottom: 8vh;
+    line-height: 1.5;
     
     }
     .profile-me-img{
@@ -103,6 +105,7 @@ body{
         margin: auto;
         border-radius: 20px;
         object-position: 50% 50%;
+        padding-bottom: 8vh;
 
         
     }
@@ -120,13 +123,13 @@ body{
     }
     
     
-    
+    .img-display-itmes{
     img:not(.profile-me-img):hover {
         transform: scale(4) rotate(0.01deg);
         z-index: 1;
        
       }
-
+    }
     }
 
 
