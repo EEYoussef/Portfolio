@@ -516,8 +516,12 @@ header {
 }
 
 .bottom-container {
-  text-align: center;
   padding: 20px;
+  text-align: center;
+}
+
+.bottom-container p {
+  font-size: .75rem;
 }
 
 @media screen and (max-width: 1024px) {

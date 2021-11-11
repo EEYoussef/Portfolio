@@ -521,8 +521,12 @@ header {
 }
 
 .bottom-container {
-  text-align: center;
   padding: 20px;
+  text-align: center;
+}
+
+.bottom-container p {
+  font-size: .75rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -949,6 +953,12 @@ body {
   color: #54436B;
 }
 
+.img-display-itmes img:not(.profile-me-img):hover {
+  -webkit-transform: scale(2) rotate(0.01deg);
+          transform: scale(2) rotate(0.01deg);
+  z-index: 1;
+}
+
 .intro-container-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1024,12 +1034,6 @@ body {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
-}
-
-.intro-container-about .computer-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .cake-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover, .intro-container-about .camera-section .img-display-itmes .img-display-itmes img:not(.profile-me-img):hover {
-  -webkit-transform: scale(2) rotate(0.01deg);
-          transform: scale(2) rotate(0.01deg);
-  z-index: 1;
 }
 
 .intro-container-about .camera-section {
