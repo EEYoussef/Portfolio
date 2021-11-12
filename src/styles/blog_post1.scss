@@ -35,7 +35,8 @@
   overflow: hidden;
     
     letter-spacing: 0.03em;
-    color: rgba(84, 67, 107, 0.54);
+    //color: rgba(84, 67, 107);
+    color:$logo-color;
      font-weight: bolder;
      font-family: $font-body;
      margin-bottom: 0; 

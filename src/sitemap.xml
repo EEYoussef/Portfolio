@@ -1,0 +1,26 @@
+<!-- <urlset xmlns = "http://www.sitemaps.org/schemas/sitemap/0.9" -->
+<urlset xmlns = ”http://www.sitemaps.org/schemas/sitemap/0.9“
+ xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+    xmlns:image = "http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+    <loc>https://eman-youssef.netlify.app</loc>
+    <lastmod>2021-11-11</lastmod>
+    </url>
+    <url>
+    <loc>https://wwww.eman-youssef/pages/about</loc>
+    <lastmod>2021-11-11</lastmod>
+    </url>
+    <url>
+    <loc>https://eman-youssef.netlify.app/pages/posts_list</loc>
+    <lastmod>2021-11-11</lastmod>
+    </url>
+    <url>
+    <loc>https://eman-youssef.netlify.app/pages/projects_list</loc>
+    <lastmod>2021-11-11</lastmod>
+    </url>
+    <url>
+    <loc>https://eman-youssef.netlify.app/pages/contact</loc>
+    <lastmod>2021-11-11</lastmod>
+    </url>
+    </urlset>
