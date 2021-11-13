@@ -2,10 +2,7 @@
 *{
 box-sizing: border-box;
 }
-// iframe{
-//   position: relative;
-//   top:100vh;
-// }
+
 html {
   scroll-behavior: smooth;
   width:100%;
@@ -17,11 +14,7 @@ body{
   padding: 0; 
   background-color: $text-color;
   color: $text-color-body;
-  // font-size: 1.5rem;
-  // .empty-top-container{
-  //   width:100%;
-  //   height: 20vh;
-  // }
+  
 }
 h1 {
   font-size: 2rem;
@@ -38,6 +31,7 @@ h3 {
   font-weight: bolder;
   font-family: $font-body;
   margin-bottom: 0;
+  
 }
 p{
   font-size: 1rem;
@@ -62,9 +56,7 @@ header{
 //-----Bio and profile pic container------//
 .landing-container{
 
-  // position:static;
-  //padding-top:200px ;
-
+  
   display:flex;
   justify-content: center;
   //flex-wrap: wrap;
@@ -77,14 +69,14 @@ header{
  }
   .profile{
     display: flex;
-    // justify-content: center;
+    
      align-items: center;
     flex-direction: column;
     .profile-img{
       width:270px;
       height: 270px;
       border-radius: 20%;
-      margin: 0 0 20px 0;
+      margin: 20px 0 20px 0;
       // margin: 20px;
       // padding: 1rem 1.5rem;
   
@@ -117,7 +109,7 @@ header{
     }
   }
   .bio{
-    // box-shadow: 5px 5px 15px 5px grey;
+   
     position: relative;
      margin: 20px 25px 10px 25px ;
     width: 100%;
@@ -200,8 +192,7 @@ header{
   width: 100%;
   box-shadow: 5px 5px 15px 5px grey;
   z-index: 10;
-  // min-height: 5vh;
-  //height: 15vh;
+  
   height:70px;
   position:fixed;
   
@@ -213,9 +204,7 @@ header{
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  // padding: 1rem 1.5rem;
-  // height: 20vh;
-    
+  
    
     .logo{  
         color:$logo-color;
@@ -241,7 +230,7 @@ header{
     .navlinks{
       list-style: none;
       float:right;
-      //line-height: 90px;
+      
       margin: 0;
       padding: 0;
       white-space:nowrap;
@@ -364,7 +353,8 @@ header{
      font-size: 1.2rem;
      font-weight: bolder;
      font-family: $font-body;
-     margin-bottom: 0; 
+     margin-bottom: 0;
+     margin-top: 2rem; 
    }
    p{
      font-family: $font-body; 
@@ -379,12 +369,11 @@ header{
    }
    }
    .post-pic{
-    //  width:150px;
-    //    height: 150px;
+    
       padding-bottom: 10px;
       max-width :80px;
        max-height: 80px;
-       margin:0 0 20px 20px;
+       margin:20px 0 20px 20px;
      
      .blog-pic{
        width: 100%;
@@ -413,14 +402,13 @@ header{
   background-clip: padding-box;
 }
 .project-container{
-  //background-color: $container-color;
+ 
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  // padding-left: 20px;
-  // padding-right: 20px;
+  
   width: 100%;
-  //padding-top: 105px;
+  
   .project-box-title{
     margin-left: 20px;
   }
@@ -483,9 +471,7 @@ header{
      
      .project-screenshot{
        width: 100%;
-      // width:150px;
-      //  height: 150px;
-      //  border-radius: 50%;
+      
        box-shadow: 5px 5px 15px 5px grey;
        margin-bottom: 10px;
      }
@@ -515,14 +501,14 @@ header{
 @media screen and (max-width: 1024px)
 {
 .main-nav{
- // height:13vh;
+ 
  height:50px;
 }
 .landing-container{
    flex-wrap: wrap;
    .bio{
     .education-intrests{
-      //flex-direction: column;
+     
       align-items: flex-start;
       flex-direction:column;
       padding-left:20px;
@@ -560,7 +546,7 @@ header{
      left:50%;
      font-size: 20px;
      line-height: 20px;
-     //margin:10px 0 30px 0;
+     
      margin:5px auto 5px auto;
      margin-left:auto;
      margin-right:auto;
@@ -573,8 +559,7 @@ header{
      left:80%;
      margin: auto;
      margin:5px auto 5px auto;
-    //  right:15px;
-    //  top:15px;
+   
    }
    .navlinks{
      width:100%;
@@ -614,7 +599,7 @@ h3{
   line-height: 1;
 }
  .landing-container{
-   //padding-top:200px;
+   
    flex-direction: column;
    justify-content: center;
    .profile-img{
@@ -641,12 +626,11 @@ h3{
     flex-direction: column;
     .logo{
       
-      // margin:10px 0 30px 0;
-      // margin-left: 0;
+      
       left:50%;
      font-size: 20px;
      line-height: 20px;
-     //margin:10px 0 30px 0;
+     
      margin:5px auto 5px auto;
      margin-left:auto;
      margin-right:auto;
@@ -656,8 +640,7 @@ h3{
       display:block;
       position: absolute;
       left:85%;
-      // right:15px;
-      // top:15px;
+      
     }
     .navlinks{
       width:100%;
@@ -680,7 +663,7 @@ h3{
   }
 }
   .landing-container{
-    //padding-top:200px;
+   
     flex-direction: column;
     justify-content: center;
     .profile-img{

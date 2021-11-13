@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="icon" href="../images/favicon.ico">
-    <title>Contact Me</title>
+    <!-- <link rel="stylesheet" href="../styles/main.css"> -->
+    <link rel="stylesheet" href="../styles/main.css" integrity="sha384-eew+li4El+yOGOPXmVN62sl6C3BopJnEMupVOshwmz6B6hdFr50iRkHKj3w9sbnU" crossorigin="anonymous">
+    <link rel="icon" href="../images/favicon.ico" integrity="sha384-HUZ1aH8QaFZTuS4q+BPK17d2hsRzzTWY37YxzsNZhY/0mmeC+Cqq6RPBRR8GQf0L" crossorigin="anonymous" >
+
+    <title>Blog</title>
 </head>
 <body>
   <header >
@@ -16,7 +18,7 @@
       <a href="../index.html" class="logo"><span>{</span>Eman<span>}</span> </a>
       <ul class="navlinks" id = "navlinks">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
+        <li><a href="./about.html">About Me</a></li>
         <li><a href="./posts_list.html">Posts</a></li>
         <li><a href="./projects_list.html">Projects</a></li>
         <li><a href="./contact.html" class="contact">Contact</a></li>
@@ -81,17 +83,7 @@
 </footer>
 </body>
 <!-- java script fro the hamburger action -->
-<script defer async>
-  const toggle_Button =  document.getElementById('togglebutn');
-  const navlist = document.getElementById('navlinks');
-
-  toggle_Button.addEventListener('click',()=>{ 
-    navlist.classList.toggle('active');
-  })
-  const nav_element = document.getElementById('page-header');
-  const nav_width = document.getElementById('page-header').clientWidth;
-document.getElementById ("page-container").style.paddingTop = document.getElementById('page-header').clientWidth;
-
-  
-</script>
+<script src="../script.js" 
+  integrity="sha384-23aEQEI/zJed3xkfkhg2O8mAnAYeU/0UZa+o6w7ZjGzZwuNzBij1eBqfVJsUlmEB" 
+  crossorigin="anonymous"></script> 
 </html>
